@@ -7,20 +7,22 @@
 <html>
 	<head>
 		<title>Aerial by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+		<link rel="stylesheet" href="assets/css/main.css"/>
 		<link rel="stylesheet" href="assets/css/popup.css">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<noscript>
+			<link rel="stylesheet" href="assets/css/noscript.css"/>
+		</noscript>
 
 	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+		<body class="is-preload">
+			<div id="wrapper">
+				<div id="bg"></div>
+				<div id="overlay"></div>
+				<div id="main">
 
-				<!-- Header -->
+					<!-- Header -->
 					<header id="header">
 						<h1>The Life Walk-On</h1>
 						<p>Data &nbsp;&bull;&nbsp; Transition &nbsp;&bull;&nbsp; New Adventures</p>
@@ -33,58 +35,64 @@
 						</nav>
 					</header>
 
-				<!-- Footer -->
+					<!-- Footer -->
 					<footer id="footer">
 						<span class="copyright">&copy; The Life Walk-On. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
 					</footer>
 
+				</div>
 			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	<!--Pop Ups-->
+			<script>
+				window.onload = function () {
+					document.body.classList.remove('is-preload');
+				}
+				window.ontouchmove = function () {
+					return false;
+				}
+				window.onorientationchange = function () {
+					document.body.scrollTop = 0;
+				}
+			</script>
+		<!--Pop Ups-->
 			<div id="popup1" class="popup" hidden>
-			<div class="popup-content">
-				<h2>Dribbble Information</h2>
-				<p>This is the Dribbble Popup.</p>
-				<button class="close-button popup-close">Close</button>
+				<div class="popup-content">
+					<h2>Dribbble Information</h2>
+					<p>This is the Dribbble Popup.</p>
+					<button class="close-button popup-close">Close</button>
+				</div>
 			</div>
-		</div>
 
-		<div id="popup2" class="popup" hidden>
-			<div class="popup-content">
-				<h2>Github Information</h2>
-				<p>This is the Github Popup.</p>
-				<button class="close-button popup-close">Close</button>
+			<div id="popup2" class="popup" hidden>
+				<div class="popup-content">
+					<h2>Github Information</h2>
+					<p>This is the Github Popup.</p>
+					<button class="close-button popup-close">Close</button>
+				</div>
 			</div>
-		</div>
 
-		<div id="popup3" class="popup" hidden>
-			<div class="popup-content">
-				<h2>Email Information</h2>
-				<p>This is the Email Popup.</p>
-				<button class="close-button popup-close">Close</button>
+			<div id="popup3" class="popup" hidden>
+				<div class="popup-content">
+					<h2>Email Information</h2>
+					<p>This is the Email Popup.</p>
+					<button class="close-button popup-close">Close</button>
+				</div>
 			</div>
-		</div>
 
-	<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        document.querySelectorAll('a[href^="#popup"]').forEach(function (link) {
-            link.addEventListener('click', function (event) {
-                event.preventDefault();
-                document.querySelector(this.getAttribute('href')).removeAttribute('hidden');
-            });
-        });
+			<script>
+				document.addEventListener('DOMContentLoaded', function () {
+					document.querySelectorAll('a[href^="#popup"]').forEach(function (link) {
+						link.addEventListener('click', function (event) {
+							event.preventDefault();
+							document.querySelector(this.getAttribute('href')).removeAttribute('hidden');
+						});
+					});
 
-        document.querySelectorAll('.popup-close').forEach(function (button) {
-            button.addEventListener('click', function () {
-                this.closest('.popup').setAttribute('hidden', '');
-            });
-        });
-    });
-</script>
-	</body>
+					document.querySelectorAll('.popup-close').forEach(function (button) {
+						button.addEventListener('click', function () {
+							this.closest('.popup').setAttribute('hidden', '');
+						});
+					});
+				});
+			</script>
+		</body>
 </html>
