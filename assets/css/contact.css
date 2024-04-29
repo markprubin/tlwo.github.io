@@ -1,0 +1,11 @@
+.contact-form {
+    resize: both;
+    overflow: auto;
+}
+
+.contact-input, .contact-input::placeholder {
+    width: 100%;
+    resize: vertical;
+    overflow: auto;
+    color: black !important;  /* This will make the text color black */
+}
