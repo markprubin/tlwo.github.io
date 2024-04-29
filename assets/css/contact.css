@@ -1,11 +1,38 @@
 .contact-form {
-    resize: both;
+    width:100%;
+    height: 100%;
     overflow: auto;
+    box-sizing: border-box;
 }
 
 .contact-input, .contact-input::placeholder {
     width: 100%;
+    color: black !important;
+}
+
+textarea.contact-input {
     resize: vertical;
     overflow: auto;
-    color: black !important;  /* This will make the text color black */
+    height: 200px; /* Add the desired height for the textarea */
+}
+
+.submit-btn {
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    margin: 20px auto;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.submit-btn:hover {
+    background-color: black;
+    color: white;
 }
